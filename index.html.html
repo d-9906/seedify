@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seedify - From Paper to Plant</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Seedify - Eco friendly handmade seed paper products">
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf6ef;
+      color: #1c2b1e;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1a4a2e;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+      padding: 8px 18px;
+      background-color: #2d7a4f;
+      border-radius: 20px;
+    }
+    nav a:hover {
+      background-color: #6bbf8e;
+      color: #1a4a2e;
+    }
+
+    /* Hero */
+    #hero {
+      background-color: #1a4a2e;
+      text-align: center;
+      padding: 200px 20px 180px;
+      color: white;
+    }
+    #hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #faf6ef;
+      padding: 10px;
+    }
+    #hero h1 {
+      font-size: 60px;
+      margin: 20px 0 8px;
+    }
+    #hero p {
+      font-size: 16px;
+      letter-spacing: 3px;
+      color: #a8d5b5;
+    }
+    #hero a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      background-color: #c9622f;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 60px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+      color: #1a4a2e;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* About badges */
+    .badges {
+      margin-top: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #1a4a2e;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 30px;
+      margin: 6px;
+      font-size: 14px;
+    }
+
+    /* About */
+    #about {
+      background-color: #faf6ef;
+    }
+
+    /* Products */
+    #products {
+      background-color: #f0e8d5;
+    }
+
+    /* How to plant */
+    #how {
+      background-color: #faf6ef;
+    }
+
+    table {
+      margin: 30px auto 0;
+      border-spacing: 20px;
+    }
+    .product-box {
+      display: inline-block;
+      background-color: white;
+      border-radius: 16px;
+      padding: 16px;
+      width: 170px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      vertical-align: top;
+      margin: 12px;
+    }
+    .product-box img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product-box b {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+      color: #1a4a2e;
+    }
+    .price {
+      display: inline-block;
+      margin-top: 8px;
+      background-color: #c9622f;
+      color: white;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* Steps */
+    .step-box {
+      display: inline-block;
+      background-color: white;
+      border-left: 5px solid #2d7a4f;
+      border-radius: 10px;
+      padding: 20px;
+      width: 180px;
+      height: 110px;
+      text-align: left;
+      margin: 10px;
+      vertical-align: top;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .step-num {
+      font-size: 17px;
+      color: #2d7a4f;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .step-box p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #2d7a4f;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    /* Contact */
+    #contact {
+      background-color: #1a4a2e;
+      color: white;
+    }
+    #contact h2 {
+      color: white;
+    }
+    #contact a {
+      color: #6bbf8e;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Thank you */
+    .thankyou {
+      background-color: #2d7a4f;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .thankyou p {
+      font-style: italic;
+      font-size: 20px;
+      color: #faf6ef;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a4a2e;
+      color: #a8d5b5;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#how">How to Plant</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero -->
+<div id="hero">
+  <img src="logo.jpeg" alt="Seedify Logo" />
+  <h1>Seedify</h1>
+  <p>FROM PAPER TO PLANT</p>
+  <a href="#products">Explore Products 🌱</a>
+</div>
+
+<!-- About -->
+<section id="about">
+  <p class="section-label">✦ Who We Are</p>
+  <h2>About Our Product</h2>
+  <p>Seedify creates beautiful handmade paper products embedded with real seeds.<br>
+  Use them, then plant them — your bookmark, rakhi or gift tag becomes a living plant.<br>
+  We believe every product should leave the world a little greener. 🌿</p>
+  <div class="badges">
+    <span class="badge">🌱 100% Eco-Friendly</span>
+    <span class="badge">✂️ Handmade</span>
+    <span class="badge">🌸 Seed Embedded</span>
+    <span class="badge">♻️ Zero Waste</span>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products">
+  <p class="section-label">✦ What We Offer</p>
+  <h2>Our Products</h2>
+
+  <div class="product-box">
+    <img src="bookmark.jpeg" alt="Bookmark" />
+    <b>Bookmarks</b>
+ <span class="price">₹30</span>
+  </div>
+
+  <div class="product-box">
+    <img src="jewellery.jpeg" alt="Jewellery" />
+    <b>Paper Jewellery</b>
+ <span class="price">₹20-₹50</span>
+  </div>
+
+  <div class="product-box">
+    <img src="rakhi.jpeg" alt="Rakhi" />
+    <b>Rakhi</b>
+ <span class="price">₹30</span>
+  </div>
+
+  <div class="product-box">
+    <img src="gift.jpeg" alt="Gift Tag" />
+    <b>Gift Tags</b>
+ <span class="price">₹20</span>
+  </div>
+
+<div class="product-box">
+    <img src="badge.jpeg" alt="Badges" />
+    <b>Badges</b>
+ <span class="price">₹15</span>
+  </div>
+
+
+</section>
+
+<!-- How to Plant -->
+<section id="how">
+  <p class="section-label">✦ Grow With Us</p>
+  <h2>How to Plant Your Paper 🌱</h2>
+
+  <div class="step-box">
+    <div class="step-num">🌿 Prepare</div>
+    <p>Tear the seed paper into pieces.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-num">🪴 Plant</div>
+    <p>Place in soil and cover gently.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-num">💧 Care</div>
+    <p>Water regularly &amp; keep in sunlight.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-num">🌱 Grow</div>
+    <p>Watch your plant come to life.</p>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <p class="section-label" style="color:#6bbf8e;">✦ Reach Out</p>
+  <h2>Contact Us</h2>
+  <p>&#128222; <a href="tel:9869234752">9869234752</a></p>
+  <br>
+  <p>&#9993; <a href="mailto:seedify4@gmail.com">seedify4@gmail.com</a></p>
+</section>
+
+<!-- Thank You -->
+<div class="thankyou">
+  <p>"From your hands to the earth — thank you for being part of Seedify." 🌱</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Seedify | From Paper to Plant 🌱 | Eco-friendly Living</p>
+</footer>
+
+</body>
+</html>
